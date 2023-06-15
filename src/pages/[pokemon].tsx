@@ -42,6 +42,12 @@ export default function PokemonDetailsPage() {
                 <strong>Types:</strong>{" "}
                 {pokemon.types.map((type) => type.type.name).join(", ")}
               </div>
+              <div>
+                <strong>Height:</strong> {pokemon.height * 10} cm
+              </div>
+              <div>
+                <strong>Weight:</strong> {pokemon.weight / 10} kg
+              </div>
             </div>
           </>
         )}
