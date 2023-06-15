@@ -9,14 +9,14 @@ export interface Pokemon {
   types: {
     type: {
       name: string;
-    }[];
-    weight: number;
-    height: number;
-    sprites: {
-      other: {
-        "official-artwork": {
-          front_default: string;
-        };
+    };
+  }[];
+  weight: number;
+  height: number;
+  sprites: {
+    other: {
+      "official-artwork": {
+        front_default: string;
       };
     };
   };

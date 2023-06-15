@@ -37,6 +37,12 @@ export default function PokemonDetailsPage() {
               width={400}
               height={400}
             />
+            <div className="d-inline-block mt-2">
+              <div>
+                <strong>Types:</strong>{" "}
+                {pokemon.types.map((type) => type.type.name).join(", ")}
+              </div>
+            </div>
           </>
         )}
       </div>
