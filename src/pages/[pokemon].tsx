@@ -24,6 +24,7 @@ export default function PokemonDetailsPage() {
           </Link>
         </p>
         {pokemonLoading && <Spinner animation="grow" />}
+        {pokemon === null && <p>Pokemon not found</p>}
         {pokemon && (
           <>
             <h1 className="text-center text-capitalize">{pokemon.name}</h1>
