@@ -1,3 +1,4 @@
+import PokemonEntry from "@/components/PokemonEntry";
 import Link from "next/link";
 
 export default function Home() {
@@ -5,9 +6,7 @@ export default function Home() {
     <>
       <div>
         <h1 className="text-center mb-4">Gotta cache &apos;em all</h1>
-        <Link href="/bulbasaur" className="link-light">
-          Bulbasaur
-        </Link>
+        <PokemonEntry name="bulbasaur" />
       </div>
     </>
   );
