@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Link from "next/link";
-import { Spinner } from "react-bootstrap";
+import { Form, Spinner } from "react-bootstrap";
 import Image from "next/image";
 import usePokemon from "@/hooks/usePokemon";
 
@@ -46,6 +46,12 @@ export default function PokemonDetailsPage() {
                 <strong>Weight:</strong> {pokemon.weight / 10} kg
               </div>
             </div>
+            <Form className="mt-4">
+              <Form.Group controlId="pokemon-nickname-input" className="mb-3">
+                <Form.Label>Give this Pokemon a Nickname</Form.Label>
+                <Form.Control name="nickname" placeholder="Timmy Turn Up" />
+              </Form.Group>
+            </Form>
           </>
         )}
       </div>
